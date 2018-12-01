@@ -1,0 +1,74 @@
+布隆过滤器 - Bloom-Filter - Murmur-Hash
+json - str / pickle - bytes / shelve
+
+hashlib
+md5 / sha1 - 单向哈希函数 - 摘要/数字签名/指纹 - 保护隐私/防篡改
+rsa / pycrypto
+AES / RSA - 对称加密/非对称加密
+base64
+BASE64编码/解码 - 二进制序列转换成64个字符表示的字符串
+
+gitlab - 搭建自己的Git服务器
+git - gitee.com / coding.net / github.com
+
+PyLint - Lint工具
+pip3 install -i https://pypi.doubanio.com/simple pylint
+
+Pythonic代码
+
+查找
+seq_search(items: list, elem) -> int:
+bin_search(items: list, elem) -> int:
+排序
+bubble_sort(items, comp=lambda x, y: x < y)
+merge_sort(items, comp=lambda x, y: x < y)
+单例
+装饰器 - 装饰器函数一般用来编写需要重复使用但是跟正常业务又没有必然联系的功能，这种功能通常被称之为横切关注功能，Django中的中间件跟装饰器的道理是一样的。
+
+扑克 / 玩家 / 牌发到四个玩家手上
+
+gitee注册账号 - 团队开发用gitee作为代码托管平台实施版本控制
+
+Docker - 虚拟化容器
+
+MySQL / Redis / Nginx / uWSGI
+
+项目的商业背景 - 电商网站/App - B2B / C2C / B2C / C2B / O2O
+
+项目的架构
+    - 业务架构（功能模块/子模块）- 思维导图
+    - 技术架构（开发框架/数据库/缓存/消息中间件/前端/移动端）- 技术栈
+    - 物理架构（Nginx/uWSGI/Gunicorn/MySQL/Oracle/Redis/主从复制/读写分离/负载均衡/安全证书）- 部署
+
+更换PYPI源(https://pypi.org)
+Linux or macOS
+在用户主目录创建.pip文件夹并在文件夹下添加一个pip.conf文件
+Windows
+在用户主目录创建pip文件夹并在文件夹下添加一个pip.ini文件
+
+[global]
+index-url=https://pypi.doubanio.com/simple
+
+在处理项目的业务实体（业务模型）时有正向工程和反向工程两种方式：
+1. 正向工程 - 编写模型类的代码，通过迁移操作生成数据库中的表
+python manage.py makemigrations appname
+python manage.py migrate
+
+2. 反向工程 - 数据库中的表已经提前准备好了，可以通过表来生成模型
+python manage.py inspectdb > appname/models.py
+
+注意：
+1. 模型名可以改但是要将关联的地方一并修改（重构-重命名），表名不能乱动
+2. 如果要修改属性名，那么要修改对应的db_column属性以便跟列保持对应关系
+3. 如果希望Django框架来管理模型，需要将managed=False删除或修改为True
+
+RESTful架构 / REST风格
+阮一峰 REST
+《网络API接口设计》文档
+rap2.taobao.org ==> 文档和假数据
+
+
+
+
+
+
