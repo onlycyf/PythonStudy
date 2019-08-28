@@ -4,7 +4,7 @@ Git使用和分支管理策略
 
 git clone - 克隆项目
 git pull - 从服务器更新
-
+git status - 查看暂存区中的文件
 git branch - 查看分支
 git branch <name> - 创建分支
 git branch -d <name> - 删除分支
